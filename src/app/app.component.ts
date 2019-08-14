@@ -30,8 +30,17 @@ export class AppComponent {
       name: "Testing Environment Server",
       status: "stable",
       started: new Date(15, 1, 2017)
+    },
+    {
+      instanceType: "small",
+      name: "Slate Server",
+      status: "critical",
+      started: new Date(15, 1, 2017)
     }
   ];
+
+  filteredStatus = "";
+
   getStatusClasses(server: {
     instanceType: string;
     name: string;
