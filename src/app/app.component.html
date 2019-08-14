@@ -4,7 +4,7 @@
       <input type="text" [(ngModel)]="filteredStatus">
       <hr>
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let server of servers | filter:filteredStatus:'status'"
+        <li class="list-group-item" *ngFor="let server of servers | filter: filteredStatus: 'status'"
           [ngClass]="getStatusClasses(server)">
           <span class="badge">
             {{ server.status }}
