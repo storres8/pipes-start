@@ -58,7 +58,7 @@ export class AppComponent {
     this.servers.push({
       instanceType: "testing",
       name: "Slate Server",
-      status: "critical",
+      status: "stable",
       started: new Date(15, 1, 2017)
     });
   }
